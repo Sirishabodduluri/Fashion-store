@@ -1,0 +1,133 @@
+
+.navbar-container {
+box-shadow: 6px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+background: linear-gradient(to right, #faf8f9, #f3f3f3); 
+position: sticky;
+top: 0;
+padding: 2px;
+z-index: 50;
+}
+
+.navbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem; 
+max-width: 1280px; 
+margin: 0 auto;
+}
+
+.brand-logo {
+font-size: 1.875rem; 
+font-weight: 800; 
+color: #be185d; 
+transition: color 0.3s ease;
+text-decoration: none;
+}
+
+.brand-logo:hover {
+color: #831843; 
+}
+
+.nav-links {
+display: none;
+gap: 1.5rem; 
+}
+@media (min-width: 768px) { 
+.nav-links {
+display: flex;
+}
+}
+
+.nav-link {
+font-size: 1.125rem; 
+font-weight: 500;
+color: #4b5563; 
+transition: color 0.3s ease;
+text-decoration: none;
+position: relative;
+padding-bottom: 3px;
+}
+
+.nav-link:hover {
+color: #ec4899; 
+}
+
+.nav-link.sale {
+color: #dc2626; 
+}
+.nav-link.sale:hover {
+color: #b91c1c;
+}
+
+.nav-group {
+display: flex;
+align-items: center;
+gap: 2rem;
+}
+
+.cart-icon-wrapper {
+position: relative;
+padding: 0.75rem;
+border-radius: 9999px;
+background-color: #fff;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+transition: background-color 0.2s ease;
+cursor: pointer;
+text-decoration: none;
+}
+
+.cart-icon-wrapper:hover {
+background-color: #fbcfe8; 
+}
+
+.cart-icon {
+height: 1.75rem;
+width: 1.75rem;
+color: #be185d;
+}
+
+.cart-badge {
+position: absolute;
+top: 0;
+right: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 0.5rem; 
+padding-top: 0.25rem;
+padding-bottom: 0.25rem;
+font-size: 0.75rem;
+font-weight: 700;
+line-height: 1;
+color: white;
+transform: translate(50%, -50%);
+background-color: #dc2626; 
+border-radius: 9999px; 
+box-shadow: 0 0 0 2px white, 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.signin-button {
+background-color: #db2777; 
+color: white;
+font-size: 1.125rem;
+font-weight: 600;
+padding: 0.5rem 1.5rem;
+border-radius: 9999px;
+transition: background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+box-shadow: 0 10px 15px -3px rgba(219, 39, 119, 0.3), 0 4px 6px -2px rgba(219, 39, 119, 0.1);
+border: none;
+}
+.signin-button:hover {
+background-color: #be185d; 
+transform: scale(1.05);
+}
+
+.hidden-sm {
+display: none;
+}
+@media (min-width: 640px) { 
+.hidden-sm {
+display: block;
+}
+}

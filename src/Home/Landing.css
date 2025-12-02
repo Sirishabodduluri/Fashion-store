@@ -1,7 +1,8 @@
 .product-grid-container {
-    padding: 20px;
+    padding: 4px;
     max-width: 1280px;
     margin: 0 auto;
+    margin-top: 26px;
 }
 
 .product-grid {
@@ -59,7 +60,16 @@
     color: #999;
     font-size: 12px;
 }
-
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    color: #999;
+    font-size: 12px;
+}
 .product-details {
     flex-grow: 1;
     display: flex;
@@ -139,4 +149,91 @@
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+.button-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.add-to-cart-button,
+.buy-now-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.add-to-cart-button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 2px solid #ccc;
+}
+
+.add-to-cart-button:hover {
+    background-color: #e0e0e0;
+}
+
+.buy-now-button {
+    background-color: #ff5722;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buy-now-button:hover {
+    background-color: #e64a19;
+    transform: translateY(-1px);
+}
+@keyframes loading-shimmer {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+.shimmer-bg {
+    background: #f6f7f8;
+    background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-repeat: no-repeat;
+    background-size: 800px 104px;
+    animation: loading-shimmer 1.2s infinite;
+    border-radius: 4px; 
+}
+
+.shimmer-card {
+    height: 400px; 
+    padding: 15px;
+    box-shadow: none; 
+}
+
+.shimmer-image-container {
+    height: 200px; 
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.shimmer-line {
+    height: 15px;
+    margin-bottom: 8px;
+}
+
+.shimmer-line.short {
+    width: 60%;
+}
+
+.shimmer-line.medium {
+    width: 85%;
+}
+
+.shimmer-button {
+    height: 35px;
+    width: 48%;
+    display: inline-block;
+    margin-right: 4%;
 }
