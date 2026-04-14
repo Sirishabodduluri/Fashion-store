@@ -10,7 +10,7 @@ const App = () => {
  const [cartCount, setcartCount] = useState(0);
  const handleAddToCart = () => {
   setcartCount(cartCount + 1);
-  console.log("Item added to cart. Total items: " + (cartCount + 1));
+  console.log("Item added to cart. Total items: " + (cartCount + 10));
 
  }
 
@@ -21,7 +21,8 @@ const App = () => {
   <StoreProvider>
        <Nav />
       <Landing />
-   
+  </StoreProvider>
+   <Landing/>
     </StoreProvider>
   </div>
 
