@@ -21,6 +21,9 @@ const App = () => {
   <StoreProvider>
        <Nav />
       <Landing />
+   <nav/>
+   <menu/>
+   <button/></button>
   </StoreProvider>
 
 
