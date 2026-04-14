@@ -22,8 +22,8 @@ const App = () => {
        <Nav />
       <Landing />
   </StoreProvider>
-   <Landing/>
-    </StoreProvider>
+
+
   </div>
 
   )
