@@ -2,7 +2,7 @@ import React from 'react'
 
 function Menu() {
   return (
-    <div></div>
+    <div><h1>Vijayalakshmi B </h1><p>Software developer</p></div>
   )
 }
 
